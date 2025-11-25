@@ -235,7 +235,10 @@ while True:
         play_music()
 
 
-
+    elif "exit" in query:
+        speak("Thank you for your time sir. Have a great day ahead!")
+        logging.info("User exited the program.")
+        exit()
 
     else:
         response = gemini_model_response(query)
